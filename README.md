@@ -1,7 +1,5 @@
 # Product Feedback App
 
-https://www.figma.com/design/ffyUs0kcwOG0gpe8N4BzYL/Product-Management-App?node-id=0-1&p=f&t=kSc9d10uZiSGCOFD-0
-
 ## 👋 Welcome!
 
 Imagine you are a freelance full-stack developer who has just been hired by a a new client: a startup that is building a new product. 
