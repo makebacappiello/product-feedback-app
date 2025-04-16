@@ -2,9 +2,9 @@
 
 ## 👋 Welcome!
 
-Imagine you are a freelance full-stack developer who has just been hired by a a new client: a startup that is building a new product. 
+Imagine you are a freelance full-stack developer who has just been hired by a new client: a startup that is building a new product. 
 
-Your client wants you to build a Product Feedback full-stack application, where customers can view and submit feedback about how to improve the product. 
+Your client wants you to build a Product Feedback application, where customers can view and submit feedback about how to improve the product. 
 
 ![image](https://github.com/user-attachments/assets/f473f1d0-02d2-4dfb-a67a-7936cd7c79ca)
 
@@ -13,15 +13,27 @@ Your client wants you to build a Product Feedback full-stack application, where 
 Your users should be able to:
 
 - View all product feedback requests
-- Add a new product feedback request
-- Receive form validations when trying to create/edit feedback requests
+- Submit a new product feedback request by filling out a form
+- Receive form validations when trying to submit new feedback requests
 - Filter suggestions by category
+- When there no suggestions for the currently selected filter, show the "There is no feedback." screen 
 - View the optimal layout for the app depending on their device's screen size
 
 Stretch goals (optional):
 - Sort suggestions by most/least upvotes and most/least comments
 - Add comments and replies to a product feedback request
 - Upvote product feedback requests
+
+## The Tech Stack
+
+These are all the technologies you should use to build your full-stack application: 
+
+| Component | Lanauge | Framework | Deployment | Dev Tools |
+|-----------|------------|----------------|------------|-------|
+| Frontend  | HTML, CSS, JavaScript | React         | Netlify   | —     |
+| Backend (server/API) | Node.js     | Express       | Render    | Postman for API testing |
+| Database  | PostgreSQL | —              | Render    | pgAdmin for database management |
+
 
 ## 🔗 Resources
 
