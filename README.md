@@ -2,7 +2,7 @@
 
 ## 👋 Welcome!
 
-Imagine you are a freelance full-stack developer who has just been hired by a new client: a startup that is building a new product. 
+Imagine you are a freelance full-stack developer who has just been hired by a new client: a startup generically called "My Company" that is building a new product. 
 
 Your client wants you to build a Product Feedback application, where customers can view and submit feedback about how to improve the product. 
 
