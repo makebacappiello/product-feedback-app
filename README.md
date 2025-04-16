@@ -6,7 +6,8 @@ Imagine you are a freelance full-stack developer who has just been hired by a ne
 
 Your client wants you to build a Product Feedback application, where customers can view and submit feedback about how to improve the product. 
 
-![image](https://github.com/user-attachments/assets/f473f1d0-02d2-4dfb-a67a-7936cd7c79ca)
+![image](https://github.com/user-attachments/assets/5fabe48e-fb2b-4337-94cc-515e64a0bf66)
+
 
 ## 🎯 Project Requirements
 
