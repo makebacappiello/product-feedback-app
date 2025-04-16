@@ -14,9 +14,9 @@ Your users should be able to:
 
 - View all product feedback requests
 - Submit a new product feedback request by filling out a form
-- Receive form validations when trying to submit new feedback requests
+- Receive form validations when trying to submit a new feedback request
 - Filter suggestions by category
-- When there no suggestions for the currently selected filter, show the "There is no feedback." screen 
+- When there no suggestions for the currently selected filter, show the "There is no feedback" screen 
 - View the optimal layout for the app depending on their device's screen size
 
 Stretch goals (optional):
