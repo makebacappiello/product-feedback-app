@@ -47,3 +47,13 @@ These are all the technologies you should use to build your full-stack applicati
 2. **Work on one feature at a time.** Finish one feature first before you move onto the next thing. Test as you go, routinely checking your site in the browser and making sure there are no errors before moving on. 
 3. **Comment your code generously — Future You will thank you.** You’ll be building on top of this project over the next 3 months, so help yourself out by writing clear, helpful comments that explain what your code is doing. Trust us, it will save you time and confusion later.
 4. **Clean up your code as you go**. Rename confusing variables, remove unused code, and organize your logic. Your code should read like a newspaper: clear, easy to follow, and understandable at a glance.
+
+## Recommended Folder Structure
+
+We recommend starting by creating two folders in your `product-feedback-app` repo: 
+1. `client`: This folder holds your frontend that you will build with Javascript & React. 
+2. `server`: This folder holds your backend that you will build with Node.js & Express.
+
+To start building your frontend, you would navigate into your `client` folder, and start your React project by making a new Vite project with `npm create vite@latest`. 
+
+To start building your backend, you would navigate into your `server` folder. Then run `npm init` to initialize your `package.json` file, and install any npm packages you want. Then create a `src` folder, which would hold your `index.js` file and `database-schema.sql` file. 
