@@ -2,16 +2,16 @@
 
 ## 👋 Welcome!
 
-Imagine you are a freelance full-stack developer who has just been hired by a new client: a startup generically called "My Company" that is building a new product. 
+Imagine you are starting out as a freelance full-stack developer. You've just been hired by your first new client: a startup that is building a new product. The startup is generically named _My Company_. 
 
-Your client wants you to build a Product Feedback application, where customers can view and submit feedback about how to improve the product. 
+_My Company_ wants you to build a Product Feedback application, where customers can view and submit feedback about how their product could be improved. 
 
 ![image](https://github.com/user-attachments/assets/5fabe48e-fb2b-4337-94cc-515e64a0bf66)
 
 
 ## 🎯 Project Requirements
 
-Your users should be able to:
+Users should be able to:
 
 - View all product feedback requests
 - Submit a new product feedback request by filling out a form
