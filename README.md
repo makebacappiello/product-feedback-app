@@ -28,7 +28,7 @@ Stretch goals (optional):
 
 These are all the technologies you should use to build your full-stack application: 
 
-| Component | Lanauge | Framework | Deployment | Dev Tools |
+| Component | Language | Framework | Deployment | Dev Tools |
 |-----------|------------|----------------|------------|-------|
 | Frontend  | HTML, CSS, JavaScript | React         | Netlify   | —     |
 | Backend (server/API) | Node.js     | Express       | Render    | Postman for API testing |
