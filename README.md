@@ -13,17 +13,19 @@ _My Company_ wants you to build a Product Feedback application, where customers 
 
 Users should be able to:
 
-- View all product feedback requests
-- Submit a new product feedback request by filling out a form
-- Receive form validations when trying to submit a new feedback request
+- View all product suggestions
+- Submit a new product suggestions by filling out a form
+- Receive form validations when trying to submit a new suggestion
 - Filter suggestions by category
-- When there no suggestions for the currently selected filter, show the "There is no feedback" screen 
+- When there are no suggestions for the currently selected filter, show the "There is no feedback" screen 
 - View the optimal layout for the app depending on their device's screen size
 
 Stretch goals (optional):
 - Sort suggestions by most/least upvotes and most/least comments
-- Add comments and replies to a product feedback request
-- Upvote product feedback requests
+- Add comments and replies to a product suggestion
+- Upvote product suggestions
+- Edit an existing suggestion
+- Delete an existing suggestions
 
 ## The Tech Stack
 
@@ -31,9 +33,9 @@ These are all the technologies you should use to build your full-stack applicati
 
 | Component | Language | Framework | Deployment | Dev Tools |
 |-----------|------------|----------------|------------|-------|
-| Frontend  | HTML, CSS, JavaScript | React         | Netlify   | —     |
-| Backend (server/API) | Node.js     | Express       | Render    | Postman for API testing |
-| Database  | PostgreSQL | —              | Render    | pgAdmin for database management |
+| Frontend  | HTML, CSS, JavaScript | React         | Netlify   |      |
+| Server/API | Node.js     | Express       | Render    | Postman for API testing |
+| Database  | PostgreSQL |               | Neon    |   |
 
 
 ## 🔗 Resources
