@@ -92,4 +92,13 @@ To start building your backend, you would navigate into your `server` folder. Th
 
 ---
 
-### ⚙️ 
+### ⚙️ Set up your `server` folder
+1. In the terminal, `cd` into your `server` folder
+2. Review the following files already provided for you:
+      - `package.json` — lists information about your project and its dependencies 
+      - `.gitignore` — lists which files Git should not track
+      - `src` folder — where all your custom code code 
+      - `index.js` — where you will write your server/API code
+      - `config.js` — contains your database's access credentials
+3. In the `server` folder, run `npm install express` and `npm install pg`. Once you do that, you should see `express` and `pg` listed as dependencies in your `package.json`.
+
