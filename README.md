@@ -20,13 +20,6 @@ Users should be able to:
 - When there are no suggestions for the currently selected filter, show the "There is no feedback" screen 
 - View the optimal layout for the app depending on their device's screen size
 
-Stretch goals (optional):
-- Upvote product suggestions
-- Sort suggestions by most/least upvotes and most/least comments
-- Edit an existing suggestion
-- Delete an existing suggestion
-- Add comments to an existing suggestion
-
 ---
 
 ## The Tech Stack
@@ -74,20 +67,20 @@ To start building your backend, you would navigate into your `server` folder. Th
 ---
 
 ### 🎯 Milestone: Create your database schema
+
 1. Write PostgreSQL code to:
-   a. Create 3 tables: `users`, `saved_countries`, and `country_counts`
-   b. Insert at least 3 rows of sample data into each table
+   a. Create 1 table: `suggestions`
+   b. Insert at least 3 rows of sample data into the table
    c. Write SQL queries your API will need to:
-        - Store and retrieve Form data
-        - Store and retrieve Saved Countries data
-        - Store and retrieve Country Count data
+        - Select all suggestions
+        - Add a suggestion
 
 ---
 
 ### 🎯 Milestone: Set up your PostgreSQL database on Neon
 1. Use Neon.tech to:
-  - Create a new database
-  - Set up your schema (create the 3 tables and insert rows of sample data)
+  - Create a new Neon project called `suggestions`
+  - Set up your database schema (create the 1 table and insert rows of sample data)
   - Confirm that the data was inserted successfully
 
 ---
@@ -102,3 +95,81 @@ To start building your backend, you would navigate into your `server` folder. Th
       - `config.js` — contains your database's access credentials
 3. In the `server` folder, run `npm install express` and `npm install pg`. Once you do that, you should see `express` and `pg` listed as dependencies in your `package.json`.
 
+---
+
+### ⚙️ Connect your Neon-hosted PostgreSQL database to your Express server
+1. Get your Neon database's Connection string. To do this, go to the Neon.tech website and open up your Neon project. You should see a 'Connect to your database' section where you can click on the Connect button.
+
+    <img width="461" height="392" alt="Connect to the Neon database on your Neon project's dashboard" src="https://github.com/user-attachments/assets/91f9e3cd-09f3-4899-b9e1-73f3fe58506a" />
+2. Once you click on the Connect button, you should see a window pop up with your database's Connection String, which contains the password/access credentials to your database. 
+
+    <img width="1073" height="425" alt="Connect to the Neon database on your Neon project's dashboard" src="https://github.com/user-attachments/assets/d42a10f0-c414-43dc-a9ac-7ef978d424ee" />
+
+    Make sure the Connection string starts with `postgresql://` — if it doesn't, you'll need to click on the dropdown menu to the upper left of the Connection String and make sure you have `Connection String` selected, and not something else like `psql`. 
+
+    <img width="1075" height="427" alt="Selecting Connection String when connecting to Neon database instead of another option like psql" src="https://github.com/user-attachments/assets/fdf21a6b-c862-40ab-83bc-a0d3b949c5dc" />
+
+3. Copy your database's Connection string, and paste it into your `config.js` file as the value of the `databaseUrl` property:
+    <img width="797" height="170" alt="Connection string as databaseUrl in the config.js file" src="https://github.com/user-attachments/assets/af6cf409-17ad-4b4e-a092-8fca0e7537ef" />
+
+---
+
+### ⚙️ Set up your server's boilerplate code 
+1. In your server's `index.js` file, set up your server using the same boilerplate code as the `06-recipe-API-server-SQL` project or your `version-4` of the Countries API project. 
+
+---
+
+### 🎯 Milestone: Build API Endpoints for `suggestions` data
+1. `GET /get-all-suggestions`: Return the suggestions data
+2. `POST /add-one-suggestion`: Save submitted form data
+3. Test your API endpoints in Postman to make sure they're working
+4. Push your code to Github
+5. Deploy your server/API to Render
+
+---
+
+### 🎯 Milestone: Build the Frontend
+
+1. Build the frontend in the `client` folder, according to the [Figma designs](https://www.figma.com/design/ffyUs0kcwOG0gpe8N4BzYL/Product-Management-App?node-id=0-1&p=f&t=kSc9d10uZiSGCOFD-0). Users should be able to:
+
+   - View all product suggestions
+   - Submit a new product suggestions by filling out a form
+   - Receive form validations when trying to submit a new suggestion
+   - Filter suggestions by category
+   - When there are no suggestions for the currently selected filter, show the "There is no feedback" screen 
+   - View the optimal layout for the app depending on their device's screen size
+2. Push your code to Github
+3. Deploy your frontend to Netlify
+
+---
+
+### Test everything again... and again! 
+1. Test all user flows:
+   - Viewing all suggestions
+   - Filtering the suggestions
+   - Adding a suggestion
+3. Check your database to make sure the data is updating correctly
+
+---
+
+### Clean and Comment your code
+1. Refactor your backend code to make it clean and modular
+2. Comment complex logic to explain how it works
+
+---
+
+### Deploy & Submit
+1. Push your code to Github
+4. Submit to Canvas!
+
+---
+
+## 🌟 Stretch Goals (Optional)
+
+Finished the main requirements? Here are some bonus challenges:
+
+- 🏆 Upvote product suggestions
+- 🏆 Sort suggestions by most/least upvotes and most/least comments
+- 🏆 Edit an existing suggestion
+- 🏆 Delete an existing suggestion
+- 🏆 Add comments to an existing suggestion
