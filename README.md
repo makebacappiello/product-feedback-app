@@ -74,12 +74,14 @@ To start building your backend, you would navigate into your `server` folder. Th
 
 ### 🎯 Milestone: Create your database schema
 
-1. In a DB Fiddle, write PostgreSQL code to create 1 table: `suggestions`
-2. Insert at least 3 rows of sample data into the table
-3. Write the SQL queries for your API to:
+1. Review the [Figma designs](https://www.figma.com/design/ffyUs0kcwOG0gpe8N4BzYL/Product-Management-App?node-id=0-1&p=f&t=kSc9d10uZiSGCOFD-0) and plan/pseudo-code what data you'll need to build this application 
+2. In a DB Fiddle, write PostgreSQL code to create your tables
+3. Insert at least 3 rows of sample data into each table
+4. Write the SQL queries for your API to:
      - Select all suggestions
      - Add a suggestion
-4. Bookmark the link to your DB Fiddle so you can find it later.
+5. Bookmark the link to your DB Fiddle so you can find it later.
+6. Submit the link to your DB Fiddle on Canvas.
    
 ---
 
@@ -132,6 +134,7 @@ To start building your backend, you would navigate into your `server` folder. Th
 3. Test your API endpoints in Postman to make sure they're working
 4. Push your code to Github
 5. Deploy your server/API to Render
+6. Submit the Render link to your deployed server to Canvas. 
 
 ---
 
