@@ -66,6 +66,12 @@ To start building your backend, you would navigate into your `server` folder. Th
 
 ---
 
+### ⚙️ Fork & Clone the Github repo 
+1. Fork this Github repo into your own account. Use this [fork and clone guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.55gk3qetux2a#heading=h.wbbot8ebr58a) to help you.
+2. Clone your new Github repo into the `dev` folder on your local machine. 
+
+---
+
 ### 🎯 Milestone: Create your database schema
 
 1. Write PostgreSQL code to:
