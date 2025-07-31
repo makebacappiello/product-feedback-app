@@ -122,7 +122,7 @@ To start building your backend, you would navigate into your `server` folder. Th
 
 ---
 
-### 🎯 Milestone: Build API Endpoints for `suggestions` data
+### 🎯 Milestone: Build the server/API
 1. `GET /get-all-suggestions`: Return all the suggestions data
 2. `POST /add-one-suggestion`: Save submitted form data
 3. Test your API endpoints in Postman to make sure they're working
