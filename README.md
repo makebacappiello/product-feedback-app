@@ -69,30 +69,33 @@ To start building your backend, you would navigate into your `server` folder. Th
 ### 🎯 Milestone: Create your database schema
 
 1. Write PostgreSQL code to:
+   
    a. Create 1 table: `suggestions`
    b. Insert at least 3 rows of sample data into the table
-   c. Write SQL queries your API will need to:
+   c. Write the SQL queries for your API to:
+   
         - Select all suggestions
         - Add a suggestion
 
 ---
 
 ### 🎯 Milestone: Set up your PostgreSQL database on Neon
-1. Use Neon.tech to:
-  - Create a new Neon project called `suggestions`
-  - Set up your database schema (create the 1 table and insert rows of sample data)
-  - Confirm that the data was inserted successfully
+
+1. Use Neon.tech to create a new Neon project called `suggestions`
+2. Set up your database on Neon (create the 1 table and insert rows of sample data)
 
 ---
 
 ### ⚙️ Set up your `server` folder
 1. In the terminal, `cd` into your `server` folder
 2. Review the following files already provided for you:
+
       - `package.json` — lists information about your project and its dependencies 
-      - `.gitignore` — lists which files Git should not track
-      - `src` folder — where all your custom code code 
+      - `.gitignore` — lists which files and folders that Git should ignore 
+      - `src` folder — where all your custom code will live
       - `index.js` — where you will write your server/API code
       - `config.js` — contains your database's access credentials
+        
 3. In the `server` folder, run `npm install express` and `npm install pg`. Once you do that, you should see `express` and `pg` listed as dependencies in your `package.json`.
 
 ---
@@ -120,7 +123,7 @@ To start building your backend, you would navigate into your `server` folder. Th
 ---
 
 ### 🎯 Milestone: Build API Endpoints for `suggestions` data
-1. `GET /get-all-suggestions`: Return the suggestions data
+1. `GET /get-all-suggestions`: Return all the suggestions data
 2. `POST /add-one-suggestion`: Save submitted form data
 3. Test your API endpoints in Postman to make sure they're working
 4. Push your code to Github
@@ -133,7 +136,7 @@ To start building your backend, you would navigate into your `server` folder. Th
 1. Build the frontend in the `client` folder, according to the [Figma designs](https://www.figma.com/design/ffyUs0kcwOG0gpe8N4BzYL/Product-Management-App?node-id=0-1&p=f&t=kSc9d10uZiSGCOFD-0). Users should be able to:
 
    - View all product suggestions
-   - Submit a new product suggestions by filling out a form
+   - Submit a new product suggestion by filling out a form
    - Receive form validations when trying to submit a new suggestion
    - Filter suggestions by category
    - When there are no suggestions for the currently selected filter, show the "There is no feedback" screen 
@@ -144,7 +147,7 @@ To start building your backend, you would navigate into your `server` folder. Th
 ---
 
 ### Test everything again... and again! 
-1. Test all user flows:
+1. Now that your database, API, and frontend are all deployed to the internet, you can test all user flows:
    - Viewing all suggestions
    - Filtering the suggestions
    - Adding a suggestion
