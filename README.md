@@ -74,15 +74,13 @@ To start building your backend, you would navigate into your `server` folder. Th
 
 ### 🎯 Milestone: Create your database schema
 
-1. Write PostgreSQL code to:
+1. In a DB Fiddle, write PostgreSQL code to create 1 table: `suggestions`
+2. Insert at least 3 rows of sample data into the table
+3. Write the SQL queries for your API to:
+     - Select all suggestions
+     - Add a suggestion
+4. Bookmark the link to your DB Fiddle so you can find it later.
    
-   a. Create 1 table: `suggestions`
-   b. Insert at least 3 rows of sample data into the table
-   c. Write the SQL queries for your API to:
-   
-        - Select all suggestions
-        - Add a suggestion
-
 ---
 
 ### 🎯 Milestone: Set up your PostgreSQL database on Neon
