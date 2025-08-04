@@ -1,5 +1,5 @@
 {
-  "name": "Product Feedback Full-Stack App",
+  "name": "product-feedback-full-stack-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "makeba",
   "license": "ISC",
   "type": "module",
   "dependencies": {
