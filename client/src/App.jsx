@@ -1,12 +1,17 @@
-import { useState, useEffect } from "react";
-import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SuggestionBoard from "./pages/SuggestionBoard";
+import FeedbackForm from "./components/FeedbackForm";
+import NoFeedback from "./pages/NoFeedback";
 
-function App() {
+export default function App() {
   return (
-    <>
-      <h1>Product Feedback Full-Stack App</h1>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<SuggestionBoard />} />
+        <Route path="/add-feedback" element={<FeedbackForm />} />
+        <Route path="/no-feedback" element={<NoFeedback />} />
+      </Routes>
+    </Router>
   );
 }
-
-export default App;
