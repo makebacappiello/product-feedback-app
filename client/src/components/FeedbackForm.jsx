@@ -6,9 +6,26 @@ export default function FeedbackForm() {
   const [description, setDescription] = useState("");
   const [category, setCategory] = useState("UI");
   const [submitted, setSubmitted] = useState(false);
+  const [errors, setErrors] = useState({
+    title: false,
+    description: false,
+    category: false,
+  });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const newErrors = {
+      title: title === "",
+      description: description === "",
+      category: category === "",
+    };
+
+    setErrors(newErrors);
+    const hasErrors = Object.values(newErrors).some((value) => value !== "");
+    //if there are no errors then the code continues otherwise it will stop
+
+    if (hasErrors) return;
 
     const newFeedback = {
       title,
@@ -37,7 +54,7 @@ export default function FeedbackForm() {
 
   if (submitted) {
     return (
-      <div style={{ padding: "2rem" }}>
+      <div className="feedback-submitted">
         <h2>✅ Feedback submitted!</h2>
         <Link to="/">Go back to the suggestion board</Link>
       </div>
@@ -45,40 +62,91 @@ export default function FeedbackForm() {
   }
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      style={{ padding: "2rem", maxWidth: "600px", margin: "auto" }}
-    >
-      <h2>Submit Feedback</h2>
-      <input
-        type="text"
-        placeholder="Title"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-        required
-        style={{ display: "block", width: "100%", marginBottom: "1rem" }}
-      />
-      <textarea
-        placeholder="Description"
-        value={description}
-        onChange={(e) => setDescription(e.target.value)}
-        required
-        style={{ display: "block", width: "100%", marginBottom: "1rem" }}
-      />
-      <select
-        value={category}
-        onChange={(e) => setCategory(e.target.value)}
-        required
-        style={{ display: "block", width: "100%", marginBottom: "1rem" }}
-      >
-        <option value="">Select category</option>
-        <option value="UI">UI</option>
-        <option value="UX">UX</option>
-        <option value="Feature">Feature</option>
-        <option value="Enhancement">Enhancement</option>
-        <option value="Bug">Bug</option>
-      </select>
-      <button type="submit">Submit</button>
-    </form>
+    <div className="feedback-container">
+      <div className="feedback-card">
+        <Link to="/" className="back-link">
+          ← Go Back
+        </Link>
+
+        <h1 className="form-title">Create New Feedback</h1>
+
+        <form onSubmit={handleSubmit} className="feedback-form">
+          {/* Title */}
+          <div className="form-group">
+            <label htmlFor="title">Feedback Title</label>
+            <p>Add a short, descriptive headline</p>
+            <input
+              id="title"
+              type="text"
+              value={title}
+              onChange={(e) => {
+                setTitle(e.target.value);
+                if (errors.title)
+                  setErrors((prev) => ({ ...prev, title: false }));
+              }}
+              className={errors.title ? "error" : ""}
+            />
+            {errors.title && (
+              <span className="error-message">Cannot be empty</span>
+            )}
+          </div>
+          {/* Category */}
+
+          <div className="form-group">
+            <label htmlFor="category">Category</label>
+            <p>Choose a category for your feedback</p>
+            <select
+              id="category"
+              value={category}
+              onChange={(e) => {
+                setCategory(e.target.value);
+                if (errors.category)
+                  setErrors((prev) => ({ ...prev, category: false }));
+              }}
+              className={errors.category ? "error" : ""}
+            >
+              <option value="">Select category</option>
+              <option value="UI">UI</option>
+              <option value="UX">UX</option>
+              <option value="Feature">Feature</option>
+              <option value="Enhancement">Enhancement</option>
+              <option value="Bug">Bug</option>
+            </select>
+            {errors.category && (
+              <span className="error-message">Cannot be empty</span>
+            )}
+          </div>
+          {/* Description */}
+
+          <div className="form-group">
+            <label htmlFor="description">Feedback Detail</label>
+            <p>Include any specific comments on what should be improved</p>
+            <textarea
+              id="description"
+              value={description}
+              onChange={(e) => {
+                setDescription(e.target.value);
+                if (errors.description)
+                  setErrors((prev) => ({ ...prev, description: false }));
+              }}
+              className={errors.description ? "error" : ""}
+            />
+            {errors.description && (
+              <span className="error-message">Cannot be empty</span>
+            )}
+          </div>
+          {/* Buttons */}
+
+          <div className="form-actions">
+            <Link to="/" className="cancel-btn">
+              Cancel
+            </Link>
+            <button type="submit" className="submit-btn">
+              Add Feedback
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
   );
 }

@@ -29,28 +29,30 @@ export default function SuggestionBoard() {
   return (
     <div className="board-container">
       {/* Sidebar */}
-      <aside className="sidebar">
+      <div className="sidebar">
         <div className="logo-box">
           <h2>My Company</h2>
           <p>Feedback Board</p>
         </div>
         <div className="category-buttons">
-          {["All", "UI", "UX", "Feature", "Enhancement", "Bug"].map((cat) => (
-            <button
-              key={cat}
-              className={`category-button ${
-                categoryFilter === cat ? "active" : ""
-              }`}
-              onClick={() => setCategoryFilter(cat)}
-            >
-              {cat}
-            </button>
-          ))}
+          {["All", "UI", "UX", "Feature", "Enhancement", "Bug"].map(
+            (category) => (
+              <button
+                key={category}
+                className={`category-button ${
+                  categoryFilter === category ? "active" : ""
+                }`}
+                onClick={() => setCategoryFilter(category)}
+              >
+                {category}
+              </button>
+            )
+          )}
         </div>
-      </aside>
+      </div>
 
       {/* Main Content */}
-      <main className="main-content">
+      <div className="main-content">
         {filtered.length === 0 ? (
           <NoFeedback />
         ) : (
@@ -70,7 +72,7 @@ export default function SuggestionBoard() {
             <SuggestionCardList feedbackData={filtered} />
           </>
         )}
-      </main>
+      </div>
     </div>
   );
 }
