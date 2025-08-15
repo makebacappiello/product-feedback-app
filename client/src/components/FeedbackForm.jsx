@@ -15,6 +15,7 @@ export default function FeedbackForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // Check if each field is empty
     const newErrors = {
       title: title === "",
       description: description === "",
@@ -22,9 +23,8 @@ export default function FeedbackForm() {
     };
 
     setErrors(newErrors);
-    const hasErrors = Object.values(newErrors).some((value) => value !== "");
-    //if there are no errors then the code continues otherwise it will stop
 
+    const hasErrors = Object.values(newErrors).some((value) => value === true);
     if (hasErrors) return;
 
     const newFeedback = {
@@ -81,8 +81,13 @@ export default function FeedbackForm() {
               value={title}
               onChange={(e) => {
                 setTitle(e.target.value);
-                if (errors.title)
-                  setErrors((prev) => ({ ...prev, title: false }));
+                if (errors.title) {
+                  setErrors({
+                    title: false,
+                    description: errors.description,
+                    category: errors.category,
+                  });
+                }
               }}
               className={errors.title ? "error" : ""}
             />
@@ -90,8 +95,8 @@ export default function FeedbackForm() {
               <span className="error-message">Cannot be empty</span>
             )}
           </div>
-          {/* Category */}
 
+          {/* Category */}
           <div className="form-group">
             <label htmlFor="category">Category</label>
             <p>Choose a category for your feedback</p>
@@ -100,8 +105,13 @@ export default function FeedbackForm() {
               value={category}
               onChange={(e) => {
                 setCategory(e.target.value);
-                if (errors.category)
-                  setErrors((prev) => ({ ...prev, category: false }));
+                if (errors.category) {
+                  setErrors({
+                    title: errors.title,
+                    description: errors.description,
+                    category: false,
+                  });
+                }
               }}
               className={errors.category ? "error" : ""}
             >
@@ -116,8 +126,8 @@ export default function FeedbackForm() {
               <span className="error-message">Cannot be empty</span>
             )}
           </div>
-          {/* Description */}
 
+          {/* Description */}
           <div className="form-group">
             <label htmlFor="description">Feedback Detail</label>
             <p>Include any specific comments on what should be improved</p>
@@ -126,8 +136,13 @@ export default function FeedbackForm() {
               value={description}
               onChange={(e) => {
                 setDescription(e.target.value);
-                if (errors.description)
-                  setErrors((prev) => ({ ...prev, description: false }));
+                if (errors.description) {
+                  setErrors({
+                    title: errors.title,
+                    description: false,
+                    category: errors.category,
+                  });
+                }
               }}
               className={errors.description ? "error" : ""}
             />
@@ -135,8 +150,8 @@ export default function FeedbackForm() {
               <span className="error-message">Cannot be empty</span>
             )}
           </div>
-          {/* Buttons */}
 
+          {/* Buttons */}
           <div className="form-actions">
             <Link to="/" className="cancel-btn">
               Cancel
