@@ -1,4 +1,4 @@
-<img width="620" height="668" alt="addFeedBack" src="https://github.com/user-attachments/assets/972b27e1-7758-4311-a91c-5933a29e7965" /># 📝 Product Feedback App.
+# 📝 Product Feedback App.
 
 ## 📌 Description
 
