@@ -4,27 +4,34 @@
 
 A full-stack application for collecting and managing user feedback. I built it app as part of my school requirements to practice my full-stack development skills, creating a complete application from front to back showcasing the subjects taught over the previous 6 months. The goal was to build a polished, real-world application based on a professional design.
 
-In this app users can submit new feature suggestions or bug reports and comment on existing feedback. The app includes a filtering system to view feedback by category and a dynamic roadmap page that visually tracks the status of suggestions.
+In this app users can submit new feature suggestions or bug reports. The app includes a filtering system to view feedback by category and a dynamic roadmap section that visually tracks the status of suggestions.
 
 ## 🚀 Live Site
 
 https://product-feedback-app-2025.netlify.app/
 
-🖼️ Screenshots!
+## 🖼️ Screenshots!
+
+### (MainPage)
 
 <img width="625" height="681" alt="MainPage" src="https://github.com/user-attachments/assets/360e3cf8-1902-4c79-8a8f-12ed508290d0" />
 
+### (Add Feedback Screen)
+
 <img width="620" height="668" alt="addFeedBack" src="https://github.com/user-attachments/assets/d1f469d7-47d7-4062-bd33-a7026089930f" />
+
+### (No Feedback Screen)
 
 <img width="529" height="400" alt="NoFeedbackPage" src="https://github.com/user-attachments/assets/50701aa1-a8ff-470c-925d-1527fecafe69" />
 
-✨ Features
-Commenting System: Add comments to feedback posts to foster discussion.
-Dynamic Filtering: Filter suggestions by category (e.g., UI, UX, Bug, Feature).
-Roadmap Page: View a summary of feedback organized by its development status.
-Form Validations: Ensure data integrity with client-side validation on feedback and comment submission forms.
-Responsive Design: The application is fully responsive and provides a seamless experience on mobile, tablet, and desktop devices.
-No Feedback Page: Allows the client to view when there isn't a feedback in the specific category and witj the option to add one.
+## ✨ Features
+
+- **Feedback System:** Add feedback suggestions to the page for developer to encourage a better functioning app.
+- **Dynamic Filtering:** Filter suggestions by category (e.g., UI, UX, Bug, Feature).
+- **Roadmap Section:** View a summary of feedback organized by its total.
+- **Form Validations:** Ensures data integrity with client-side validation on feedback submission form.
+- **Responsive Design:** The application is fully responsive and provides a seamless experience on mobile, tablet, and desktop devices.
+- **No Feedback Page:** Allows the client to view when there isn't a feedback in the specific category and have the option to add one.
 
 ## 🛠️ Tech Stack
 
@@ -32,20 +39,20 @@ List of tools and technologies used to build the frontend, backend and database.
 
 ### Frontend
 
-Languages: JavaScript, HTML, CSS .
-Framework: React.
-Deployment: Netlify.
+- **Languages:** JavaScript, HTML, CSS .
+- **Framework:** React.
+- **Deployment:** Netlify.
 
 ### Server/API
 
-Languages: JavaScript (Node.js).
-Framework: Express.js.
-Deployment: Render.
+- **Languages:** JavaScript (Node.js).
+- **Framework:** Express.js.
+- **Deployment:** Render.
 
 ### Database
 
-Languages: PostgreSQL.
-Deployment: Neon.
+- **Languages:** PostgreSQL.
+- **Deployment:** Neon.
 
 ## 💭 Reflections
 
@@ -63,13 +70,13 @@ The most challenging aspect was managing the application's complex state. Ensuri
 
 ### Future ideas for further building the project:
 
-🏆 Upvote product suggestions
-🏆 Add a hamburger menu in mobile view
-🏆 Sort suggestions by most/least upvotes and most/least comments
-🏆 Edit an existing suggestion
-🏆 Delete an existing suggestion
-🏆 Add comments to an existing suggestion
-🏆 Implement multi-filtering
+- 🏆 Upvote product suggestions
+- 🏆 Add a hamburger menu in mobile view
+- 🏆 Sort suggestions by most/least upvotes and most/least comments
+- 🏆 Edit an existing suggestion
+- 🏆 Delete an existing suggestion
+- 🏆 Add comments to an existing suggestion
+- 🏆 Implement multi-filtering
 
 ## 🙌 Credits
 
