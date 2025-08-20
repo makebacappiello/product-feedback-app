@@ -28,7 +28,7 @@ https://product-feedback-app-2025.netlify.app/
 
 - **Feedback System:** Add feedback suggestions to the page for developer to encourage a better functioning app.
 - **Dynamic Filtering:** Filter suggestions by category (e.g., UI, UX, Bug, Feature).
-- **Roadmap Section:** View a summary of feedback organized by its total.
+- **Suggestions Counter:** View a summary of feedback organized by its total.
 - **Form Validations:** Ensures data integrity with client-side validation on feedback submission form.
 - **Responsive Design:** The application is fully responsive and provides a seamless experience on mobile, tablet, and desktop devices.
 - **No Feedback Page:** Allows the client to view when there isn't a feedback in the specific category and have the option to add one.
